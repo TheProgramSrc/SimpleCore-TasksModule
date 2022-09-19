@@ -7,18 +7,16 @@ plugins {
     id 'org.jetbrains.dokka' version '1.6.21'
 }
 
-def projectVersion = (System.getenv("VERSION") ?: '0.1.0-SNAPSHOT').replaceFirst("v", "").replace('/', '')
+def projectVersion = (System.getenv("VERSION") ?: '0.1.1-SNAPSHOT').replaceFirst("v", "").replace('/', '')
 
 group 'xyz.theprogramsrc'
 version projectVersion
-description 'Networking module for SimpleCore API.'
+description 'Tasks manager module for SimpleCore API.'
 
 repositories {
     mavenLocal()
     mavenCentral()
 
-    maven { url 'https://repo.theprogramsrc.xyz/repository/maven-public/' }
-    maven { url 'https://repo.theprogramsrc.xyz/repository/simplecoreapi-modules/' }
     maven { url 'https://oss.sonatype.org/content/repositories/snapshots/' }
     maven { url 'https://oss.sonatype.org/content/repositories/releases/' }
     maven { url 'https://oss.sonatype.org/content/groups/public/' }
@@ -85,10 +83,12 @@ publishing {
     repositories {
         if(System.getenv('env') == 'prod'){
             maven {
-                name = 'TheProgramSrcRepository'
-                credentials.username = System.getenv('NEXUS_USERNAME')
-                credentials.password = System.getenv('NEXUS_PASSWORD')
-                url = uri("https://repo.theprogramsrc.xyz/repository/simplecoreapi-modules/")
+                name = 'GitHubPackages'
+                url = 'https://maven.pkg.github.com/TheProgramSrc/SimpleCore-TasksModule'
+                credentials {
+                    username = System.getenv('GITHUB_ACTOR')
+                    password = System.getenv('GITHUB_TOKEN')
+                }
             }
         }else{
             mavenLocal()
