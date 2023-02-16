@@ -5,8 +5,8 @@ $dokka.location:xyz.theprogramsrc.tasksmodule.bungee/BungeeTasks.Companion///Poi
 $dokka.location:xyz.theprogramsrc.tasksmodule.bungee/BungeeTasks.Companion/instance/#/PointingToDeclaration/-tasks-module/xyz.theprogramsrc.tasksmodule.bungee/-bungee-tasks/-companion/instance.html
 $dokka.location:xyz.theprogramsrc.tasksmodule.bungee/BungeeTasks///PointingToDeclaration/-tasks-module/xyz.theprogramsrc.tasksmodule.bungee/-bungee-tasks/index.html
 $dokka.location:xyz.theprogramsrc.tasksmodule.bungee/BungeeTasks/BungeeTasks/#/PointingToDeclaration/-tasks-module/xyz.theprogramsrc.tasksmodule.bungee/-bungee-tasks/-bungee-tasks.html
-$dokka.location:xyz.theprogramsrc.tasksmodule.bungee/BungeeTasks/runAsync/#kotlin.Int#java.lang.Runnable/PointingToDeclaration/-tasks-module/xyz.theprogramsrc.tasksmodule.bungee/-bungee-tasks/run-async.html
-$dokka.location:xyz.theprogramsrc.tasksmodule.bungee/BungeeTasks/runAsyncRepeating/#kotlin.Int#kotlin.Int#java.lang.Runnable/PointingToDeclaration/-tasks-module/xyz.theprogramsrc.tasksmodule.bungee/-bungee-tasks/run-async-repeating.html
+$dokka.location:xyz.theprogramsrc.tasksmodule.bungee/BungeeTasks/runAsync/#kotlin.Int#kotlin.Function0[kotlin.Unit]/PointingToDeclaration/-tasks-module/xyz.theprogramsrc.tasksmodule.bungee/-bungee-tasks/run-async.html
+$dokka.location:xyz.theprogramsrc.tasksmodule.bungee/BungeeTasks/runAsyncRepeating/#kotlin.Int#kotlin.Int#kotlin.Function0[kotlin.Unit]/PointingToDeclaration/-tasks-module/xyz.theprogramsrc.tasksmodule.bungee/-bungee-tasks/run-async-repeating.html
 $dokka.location:xyz.theprogramsrc.tasksmodule.bungee/BungeeTasks/scheduler/#/PointingToDeclaration/-tasks-module/xyz.theprogramsrc.tasksmodule.bungee/-bungee-tasks/scheduler.html
 $dokka.location:xyz.theprogramsrc.tasksmodule.objects////PointingToDeclaration/-tasks-module/xyz.theprogramsrc.tasksmodule.objects/index.html
 $dokka.location:xyz.theprogramsrc.tasksmodule.objects/RecurringTask///PointingToDeclaration/-tasks-module/xyz.theprogramsrc.tasksmodule.objects/-recurring-task/index.html
@@ -18,13 +18,21 @@ $dokka.location:xyz.theprogramsrc.tasksmodule.spigot/SpigotTasks.Companion///Poi
 $dokka.location:xyz.theprogramsrc.tasksmodule.spigot/SpigotTasks.Companion/instance/#/PointingToDeclaration/-tasks-module/xyz.theprogramsrc.tasksmodule.spigot/-spigot-tasks/-companion/instance.html
 $dokka.location:xyz.theprogramsrc.tasksmodule.spigot/SpigotTasks///PointingToDeclaration/-tasks-module/xyz.theprogramsrc.tasksmodule.spigot/-spigot-tasks/index.html
 $dokka.location:xyz.theprogramsrc.tasksmodule.spigot/SpigotTasks/SpigotTasks/#/PointingToDeclaration/-tasks-module/xyz.theprogramsrc.tasksmodule.spigot/-spigot-tasks/-spigot-tasks.html
-$dokka.location:xyz.theprogramsrc.tasksmodule.spigot/SpigotTasks/runTask/#java.lang.Runnable/PointingToDeclaration/-tasks-module/xyz.theprogramsrc.tasksmodule.spigot/-spigot-tasks/run-task.html
-$dokka.location:xyz.theprogramsrc.tasksmodule.spigot/SpigotTasks/runTaskAsynchronously/#java.lang.Runnable/PointingToDeclaration/-tasks-module/xyz.theprogramsrc.tasksmodule.spigot/-spigot-tasks/run-task-asynchronously.html
-$dokka.location:xyz.theprogramsrc.tasksmodule.spigot/SpigotTasks/runTaskLater/#kotlin.Long#java.lang.Runnable/PointingToDeclaration/-tasks-module/xyz.theprogramsrc.tasksmodule.spigot/-spigot-tasks/run-task-later.html
-$dokka.location:xyz.theprogramsrc.tasksmodule.spigot/SpigotTasks/runTaskLaterAsynchronously/#kotlin.Long#java.lang.Runnable/PointingToDeclaration/-tasks-module/xyz.theprogramsrc.tasksmodule.spigot/-spigot-tasks/run-task-later-asynchronously.html
-$dokka.location:xyz.theprogramsrc.tasksmodule.spigot/SpigotTasks/runTaskTimer/#kotlin.Long#kotlin.Long#java.lang.Runnable/PointingToDeclaration/-tasks-module/xyz.theprogramsrc.tasksmodule.spigot/-spigot-tasks/run-task-timer.html
-$dokka.location:xyz.theprogramsrc.tasksmodule.spigot/SpigotTasks/runTaskTimerAsynchronously/#kotlin.Long#kotlin.Long#java.lang.Runnable/PointingToDeclaration/-tasks-module/xyz.theprogramsrc.tasksmodule.spigot/-spigot-tasks/run-task-timer-asynchronously.html
+$dokka.location:xyz.theprogramsrc.tasksmodule.spigot/SpigotTasks/runTask/#kotlin.Function0[kotlin.Unit]/PointingToDeclaration/-tasks-module/xyz.theprogramsrc.tasksmodule.spigot/-spigot-tasks/run-task.html
+$dokka.location:xyz.theprogramsrc.tasksmodule.spigot/SpigotTasks/runTaskAsynchronously/#kotlin.Function0[kotlin.Unit]/PointingToDeclaration/-tasks-module/xyz.theprogramsrc.tasksmodule.spigot/-spigot-tasks/run-task-asynchronously.html
+$dokka.location:xyz.theprogramsrc.tasksmodule.spigot/SpigotTasks/runTaskLater/#kotlin.Long#kotlin.Function0[kotlin.Unit]/PointingToDeclaration/-tasks-module/xyz.theprogramsrc.tasksmodule.spigot/-spigot-tasks/run-task-later.html
+$dokka.location:xyz.theprogramsrc.tasksmodule.spigot/SpigotTasks/runTaskLaterAsynchronously/#kotlin.Long#kotlin.Function0[kotlin.Unit]/PointingToDeclaration/-tasks-module/xyz.theprogramsrc.tasksmodule.spigot/-spigot-tasks/run-task-later-asynchronously.html
+$dokka.location:xyz.theprogramsrc.tasksmodule.spigot/SpigotTasks/runTaskTimer/#kotlin.Long#kotlin.Long#kotlin.Function0[kotlin.Unit]/PointingToDeclaration/-tasks-module/xyz.theprogramsrc.tasksmodule.spigot/-spigot-tasks/run-task-timer.html
+$dokka.location:xyz.theprogramsrc.tasksmodule.spigot/SpigotTasks/runTaskTimerAsynchronously/#kotlin.Long#kotlin.Long#kotlin.Function0[kotlin.Unit]/PointingToDeclaration/-tasks-module/xyz.theprogramsrc.tasksmodule.spigot/-spigot-tasks/run-task-timer-asynchronously.html
 $dokka.location:xyz.theprogramsrc.tasksmodule.spigot/SpigotTasks/scheduler/#/PointingToDeclaration/-tasks-module/xyz.theprogramsrc.tasksmodule.spigot/-spigot-tasks/scheduler.html
+$dokka.location:xyz.theprogramsrc.tasksmodule.velocity////PointingToDeclaration/-tasks-module/xyz.theprogramsrc.tasksmodule.velocity/index.html
+$dokka.location:xyz.theprogramsrc.tasksmodule.velocity/VelocityTasks.Companion///PointingToDeclaration/-tasks-module/xyz.theprogramsrc.tasksmodule.velocity/-velocity-tasks/-companion/index.html
+$dokka.location:xyz.theprogramsrc.tasksmodule.velocity/VelocityTasks.Companion/instance/#/PointingToDeclaration/-tasks-module/xyz.theprogramsrc.tasksmodule.velocity/-velocity-tasks/-companion/instance.html
+$dokka.location:xyz.theprogramsrc.tasksmodule.velocity/VelocityTasks///PointingToDeclaration/-tasks-module/xyz.theprogramsrc.tasksmodule.velocity/-velocity-tasks/index.html
+$dokka.location:xyz.theprogramsrc.tasksmodule.velocity/VelocityTasks/VelocityTasks/#/PointingToDeclaration/-tasks-module/xyz.theprogramsrc.tasksmodule.velocity/-velocity-tasks/-velocity-tasks.html
+$dokka.location:xyz.theprogramsrc.tasksmodule.velocity/VelocityTasks/runAsync/#kotlin.Int#kotlin.Function0[kotlin.Unit]/PointingToDeclaration/-tasks-module/xyz.theprogramsrc.tasksmodule.velocity/-velocity-tasks/run-async.html
+$dokka.location:xyz.theprogramsrc.tasksmodule.velocity/VelocityTasks/runAsyncRepeating/#kotlin.Int#kotlin.Int#kotlin.Function0[kotlin.Unit]/PointingToDeclaration/-tasks-module/xyz.theprogramsrc.tasksmodule.velocity/-velocity-tasks/run-async-repeating.html
+$dokka.location:xyz.theprogramsrc.tasksmodule.velocity/VelocityTasks/scheduler/#/PointingToDeclaration/-tasks-module/xyz.theprogramsrc.tasksmodule.velocity/-velocity-tasks/scheduler.html
 $dokka.location:xyz.theprogramsrc.tasksmodule////PointingToDeclaration/-tasks-module/xyz.theprogramsrc.tasksmodule/index.html
 $dokka.location:xyz.theprogramsrc.tasksmodule/Main///PointingToDeclaration/-tasks-module/xyz.theprogramsrc.tasksmodule/-main/index.html
 $dokka.location:xyz.theprogramsrc.tasksmodule/Main/Main/#/PointingToDeclaration/-tasks-module/xyz.theprogramsrc.tasksmodule/-main/-main.html
@@ -32,4 +40,5 @@ xyz.theprogramsrc.tasksmodule
 xyz.theprogramsrc.tasksmodule.bungee
 xyz.theprogramsrc.tasksmodule.objects
 xyz.theprogramsrc.tasksmodule.spigot
+xyz.theprogramsrc.tasksmodule.velocity
 

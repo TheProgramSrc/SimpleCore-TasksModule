@@ -6,10 +6,18 @@
     <link href="../../../images/logo-icon.svg" rel="icon" type="image/svg">
     <script>var pathToRoot = "../../../";</script>
     <script>const storage = localStorage.getItem("dokka-dark-mode")
-const savedDarkMode = storage ? JSON.parse(storage) : false
-if(savedDarkMode === true){
-    document.getElementsByTagName("html")[0].classList.add("theme-dark")
-}</script>
+    if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    } else {
+        const savedDarkMode = JSON.parse(storage)
+        if(savedDarkMode === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    }
+    </script>
 <script type="text/javascript" src="../../../scripts/sourceset_dependencies.js" async="async"></script>
 <link href="../../../styles/style.css" rel="Stylesheet">
 <link href="../../../styles/jetbrains-mono.css" rel="Stylesheet">
@@ -21,6 +29,7 @@ if(savedDarkMode === true){
 <script type="text/javascript" src="../../../scripts/platform-content-handler.js" async="async"></script>
 <script type="text/javascript" src="../../../scripts/main.js" defer="defer"></script>
 <script type="text/javascript" src="../../../scripts/prism.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/symbol-parameters-wrapper_deferred.js" defer="defer"></script>
 </head>
 <body>
 <div class="navigation-wrapper" id="navigation-wrapper">
@@ -31,7 +40,7 @@ if(savedDarkMode === true){
             </a>
     </div>
     <div>
-0.1.1-SNAPSHOT    </div>
+0.2.0-SNAPSHOT    </div>
     <div class="pull-right d-flex">
         <button id="theme-toggle-button"><span id="theme-toggle"></span></button>
         <div id="searchBar"></div>
@@ -42,15 +51,15 @@ if(savedDarkMode === true){
         <div id="sideMenu"></div>
     </div>
     <div id="main">
-<div class="main-content" id="content" pageIds="TasksModule::xyz.theprogramsrc.tasksmodule.spigot/SpigotTasks/runTask/#java.lang.Runnable/PointingToDeclaration//769193423">
-  <div class="breadcrumbs"><a href="../../../index.html">TasksModule</a><span class="delimiter">/</span><a href="../index.html">xyz.theprogramsrc.tasksmodule.spigot</a><span class="delimiter">/</span><a href="index.html">SpigotTasks</a><span class="delimiter">/</span><a href="run-task.html">runTask</a></div>
+<div class="main-content" id="content" pageIds="TasksModule::xyz.theprogramsrc.tasksmodule.spigot/SpigotTasks/runTask/#kotlin.Function0[kotlin.Unit]/PointingToDeclaration//769193423">
+  <div class="breadcrumbs"><a href="../../../index.html">TasksModule</a><span class="delimiter">/</span><a href="../index.html">xyz.theprogramsrc.tasksmodule.spigot</a><span class="delimiter">/</span><a href="index.html">SpigotTasks</a><span class="delimiter">/</span><span class="current">runTask</span></div>
   <div class="cover ">
     <h1 class="cover"><span>run</span><wbr></wbr><span><span>Task</span></span></h1>
   </div>
-  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":dokkaHtml/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="run-task.html"><span class="token function">runTask</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">task<span class="token operator">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Runnable.html">Runnable</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="org.bukkit.scheduler/BukkitTask///PointingToDeclaration/">BukkitTask</span><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><p class="paragraph">Runs a task after 1 tick (0.05 seconds)</p><h4 class="">Return</h4><p class="paragraph">the <span data-unresolved-link="org.bukkit.scheduler/BukkitTask///PointingToDeclaration/">BukkitTask</span></p><h2 class="">Parameters</h2><div data-togglable="Parameters"><div class="table" data-togglable="Parameters"><div class="table-row" data-filterable-current=":dokkaHtml/main" data-filterable-set=":dokkaHtml/main"><div class="main-subrow keyValue WithExtraAttributes"><div class=""><span class="inline-flex"><div><span><span>task</span></span></div></span></div><div><div class="title"><div data-togglable="Parameters"><p class="paragraph">The task to run</p></div></div></div></div></div></div></div></div></div>
+  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="run-task.html"><span class="token function">runTask</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">task<span class="token operator">: </span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="org.bukkit.scheduler/BukkitTask///PointingToDeclaration/">BukkitTask</span></div><p class="paragraph">Runs a task after 1 tick (0.05 seconds)</p><span class="kdoc-tag"><h4 class="">Return</h4><p class="paragraph">the <span data-unresolved-link="org.bukkit.scheduler/BukkitTask///PointingToDeclaration/">BukkitTask</span></p></span><h4 class="">Parameters</h4><div data-togglable="Parameters"><div class="table" data-togglable="Parameters"><div class="table-row" data-filterable-current=":dokkaHtml/main" data-filterable-set=":dokkaHtml/main"><div class="main-subrow keyValue WithExtraAttributes"><div class=""><span class="inline-flex"><div><u><span><span>task</span></span></u></div></span></div><div><div class="title"><div data-togglable="Parameters"><p class="paragraph">The task to run</p></div></div></div></div></div></div></div></div></div>
 </div>
       <div class="footer">
-        <span class="go-to-top-icon"><a href="#content" id="go-to-top-link"></a></span><span>© 2022 Copyright</span><span
+        <span class="go-to-top-icon"><a href="#content" id="go-to-top-link"></a></span><span>© 2023 Copyright</span><span
                 class="pull-right"><span>Generated by </span><a
                 href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span>
       </div>

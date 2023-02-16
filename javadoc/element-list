@@ -1,0 +1,11 @@
+$dokka.format:javadoc-v1
+$dokka.linkExtension:html
+$dokka.location:xyz.theprogramsrc.tasksmodule.bungee/BungeeTasks.Companion///PointingToDeclaration/xyz/theprogramsrc/tasksmodule/bungee/BungeeTasks.Companion.html
+$dokka.location:xyz.theprogramsrc.tasksmodule.spigot/SpigotTasks.Companion///PointingToDeclaration/xyz/theprogramsrc/tasksmodule/spigot/SpigotTasks.Companion.html
+$dokka.location:xyz.theprogramsrc.tasksmodule.velocity/VelocityTasks.Companion///PointingToDeclaration/xyz/theprogramsrc/tasksmodule/velocity/VelocityTasks.Companion.html
+xyz.theprogramsrc.tasksmodule
+xyz.theprogramsrc.tasksmodule.bungee
+xyz.theprogramsrc.tasksmodule.objects
+xyz.theprogramsrc.tasksmodule.spigot
+xyz.theprogramsrc.tasksmodule.velocity
+
