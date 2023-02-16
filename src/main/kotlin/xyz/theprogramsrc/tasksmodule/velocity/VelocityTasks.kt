@@ -1,31 +1,28 @@
-package xyz.theprogramsrc.tasksmodule.bungee
+package xyz.theprogramsrc.tasksmodule.velocity
 
-import net.md_5.bungee.api.scheduler.ScheduledTask
-import xyz.theprogramsrc.simplecoreapi.bungee.BungeeLoader
+import com.velocitypowered.api.scheduler.ScheduledTask
+import xyz.theprogramsrc.simplecoreapi.velocity.VelocityLoader
 import xyz.theprogramsrc.tasksmodule.objects.RecurringTask
 import java.util.concurrent.TimeUnit
 
-/**
- * Representation of the BungeeCord Task Manager
- */
-class BungeeTasks {
+class VelocityTasks {
 
     companion object {
         /**
-         * The BungeeCord Task Manager
+         * The Velocity Task Manager
          */
-        val instance = BungeeTasks()
+        val instance = VelocityTasks()
     }
 
     /**
-     * BungeeCord Scheduler
+     * Velocity Scheduler
      */
-    val scheduler = BungeeLoader.instance.proxy.scheduler
+    val scheduler = VelocityLoader.instance.server.scheduler
 
     /**
-     * Instance of Bungee Loader
+     * Instance of the Velocity Loader
      */
-    private val plugin = BungeeLoader.instance
+    private val plugin = VelocityLoader.instance
 
     /**
      * Runs an async task after the specified delay in ticks
@@ -33,7 +30,10 @@ class BungeeTasks {
      * @param task The task to run
      * @return the [ScheduledTask]
      */
-    fun runAsync(delay: Int = 1, task: () -> Unit): ScheduledTask = scheduler.schedule(plugin, task, delay.times(50).toLong(), TimeUnit.MILLISECONDS)
+    fun runAsync(delay: Int = 1, task: () -> Unit): ScheduledTask =
+        scheduler.buildTask(plugin, task)
+            .delay(delay.times(50).toLong(), TimeUnit.MILLISECONDS)
+            .schedule()
 
     /**
      * Runs a repeating task asynchronously every given ticks (1 tick = 0.05 seconds) after the given ticks (1 tick = 0.05 seconds)
@@ -43,25 +43,26 @@ class BungeeTasks {
      * @return the [RecurringTask]
      */
     fun runAsyncRepeating(delay: Int = 1, period: Int = 1, task: () -> Unit): RecurringTask {
-        val bungeeTask = scheduler.schedule(plugin, task, delay.times(50).toLong(), period.times(50).toLong(), TimeUnit.MILLISECONDS)
+        val velocityTask = scheduler.buildTask(plugin, task)
+            .delay(delay.times(50).toLong(), TimeUnit.MILLISECONDS)
+            .repeat(period.times(50).toLong(), TimeUnit.MILLISECONDS)
+            .schedule()
         return object:RecurringTask(){
             var cancelled: Boolean = false
 
             override fun start(): RecurringTask = this.apply {
                 if(cancelled) {
-                    this@BungeeTasks.runAsyncRepeating(delay, period, task)
+                    this@VelocityTasks.runAsyncRepeating(delay, period, task)
                     cancelled = false
                 }
             }
 
             override fun stop(): RecurringTask = this.apply {
-                bungeeTask.cancel()
+                velocityTask.cancel()
                 cancelled = true
             }
 
         }
     }
-
-
 
 }

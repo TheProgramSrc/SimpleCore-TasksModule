@@ -4,9 +4,10 @@
 
 The following list can tell you if the version is supported or not. If the version is not supported you won't get support from the team
 
-| Version | Supported          |
-|-------| ------------------ |
-| 0.1.X | :white_check_mark: |
+| Version | Supported           | Security Updates   | 
+|---------|---------------------|--------------------|
+| 0.2.X   | :white_check_mark:  | :white_check_mark: |
+| 0.1.X   | :x:                 | :x:                |
 
 ## Reporting a Vulnerability
 
