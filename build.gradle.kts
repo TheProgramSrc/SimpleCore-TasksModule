@@ -40,7 +40,7 @@ dependencies {
     compileOnly("net.md-5:bungeecord-api:1.19-R0.1-SNAPSHOT")
     compileOnly("com.velocitypowered:velocity-api:3.1.2-SNAPSHOT")
 
-    testImplementation("org.junit.jupiter:junit-jupiter:5.9.2")
+    testImplementation("org.junit.jupiter:junit-jupiter:5.11.3")
 }
 
 
