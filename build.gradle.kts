@@ -38,7 +38,7 @@ dependencies {
 
     compileOnly("org.spigotmc:spigot-api:1.19.3-R0.1-SNAPSHOT")
     compileOnly("net.md-5:bungeecord-api:1.19-R0.1-SNAPSHOT")
-    compileOnly("com.velocitypowered:velocity-api:3.1.2-SNAPSHOT")
+    compileOnly("com.velocitypowered:velocity-api:3.5.1")
 
     testImplementation("org.junit.jupiter:junit-jupiter:5.9.2")
 }
